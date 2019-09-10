@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" th:action="Command" th:object="${Challenger}">
+	<p>
+	<span th:text="${Challenger.name}"></span><span th:text="${Challenger.msg}"></span>
+	</p>
+	<br>
+	<input type="submit" value="もどる" />
+	</form>
+</body>
+</html>

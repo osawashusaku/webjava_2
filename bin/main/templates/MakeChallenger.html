@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>MakeChallenger</title>
+</head>
+<body>
+	<form method="post" th:action="Command" th:object="${Challenger}">
+	<h1>次なる挑戦者はおまえか…？</h1>
+		<p>職業：
+			<input type="radio" name="job" value="fighter">戦士
+			<input type="radio" name="job" value="wizard">魔法使い
+		</p>
+		<p>名前：
+			<input type="text" name="name" />
+		</p>
+	<br/>
+	<input type="submit" value="Let's Go！" />
+	</form>
+</body>
+</html>
